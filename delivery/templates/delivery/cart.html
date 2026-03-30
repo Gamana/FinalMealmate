@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    {{username}}
+    Hi {{username}} here are you items
     <!-- show current menu -->
     <table border="1">
         <thead>
@@ -30,6 +30,7 @@
             {% endfor %}
         </tbody>
         <h2>Total price : {{total_price}}</h2>
+        
         <form action="{% url 'checkout' username %}">
             <input type="submit" value="CHECK OUT" />
         </form>

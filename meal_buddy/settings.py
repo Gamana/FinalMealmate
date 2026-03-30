@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j-&6-&wui-wuvpj+2)@p+%w570gu8h9kg#c^&rv7ab5-w^^hsc'
+SECRET_KEY = 'your-secure-secret-key-here-change-this'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yourusername.pythonanywhere.com']
 
 
 # Application definition
@@ -117,14 +117,42 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# RAZORPAY_KEY_ID = 'rzp_test_27QQUV8scKebIl'
-# RAZORPAY_KEY_SECRET = '2y9ILIVkVSpOrc1y6IXXggk3'
+# RAZORPAY_KEY_ID = 'rzp_test_lTV3Hhr4ayCQ'
+# RAZORPAY_KEY_SECRET = 'eFILRtRtJyDqE4Qkz5a3K9'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RAZORPAY_KEY_ID = 'rzp_test_lT6VV3Hhr4ayCQ'
+RAZORPAY_KEY_SECRET = 'eFILRtRtJyDqNpE4Qkz5a3K9'
 
 
 

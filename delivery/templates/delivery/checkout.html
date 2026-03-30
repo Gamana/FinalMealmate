@@ -13,6 +13,10 @@
     {% if error %}
     <p style="color: red;">{{ error }}</p>
     {% else %}
+
+
+
+
     <table border="1">
         <thead>
             <tr>
@@ -31,12 +35,19 @@
     </table>
     <h3>Total: ₹{{ total_price }}</h3>
 
+
+
+    
+
     <button id="rzp-button">Pay with Razorpay</button>
     {% endif %}
 
+
+    
+
     <script>
         var options = {
-            "key": "{{ razorpay_key_id }}",  // Razorpay API key
+            "key": "{{ rzp_test_lT6VV3Hhr4ayCQ }}",  // Razorpay API key
             "amount": "{{ total_price|floatformat:2|add:'0.00'|floatformat:2 }}00", // Amount in paisa
             "currency": "INR",
             "name": "Meal Buddy",
